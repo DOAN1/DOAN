@@ -1,0 +1,36 @@
+/* تحسين الخلفية */
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.bg-image {
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
+}
+
+.about-honey {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.honey-types {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.honey-item {
+    text-align: center;
+}
+
+.rating span {
+    font-size: 2rem;
+    cursor: pointer;
+    color: #ccc;
+}
+
+.rating span:hover {
+    color: #ff9900;
+}
