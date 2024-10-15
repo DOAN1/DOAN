@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عسل السدر</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            direction: rtl;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .product-image {
+            text-align: center;
+        }
+        .product-image img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .product-details {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .price {
+            font-size: 1.5rem;
+            color: #ff9900;
+            margin: 10px 0;
+        }
+        .rating {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            margin-bottom: 20px;
+        }
+        .rating span {
+            font-size: 1.2rem;
+            cursor: pointer;
+            color: #ff9900;
+        }
+        .review-button {
+            padding: 10px 20px;
+            background-color: #ff9900;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .related-products {
+            margin-top: 40px;
+        }
+        .related-products img {
+            width: 100px;
+            height: auto;
+            margin: 10px;
+        }
+        .social-footer {
+            margin-top: 40px;
+            text-align: center;
+        }
+        .social-footer a {
+            margin: 10px;
+            text-decoration: none;
+            color: #ff9900;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- صورة المنتج -->
+    <div class="product-image">
+        <img src="1.jpg" alt="عسل السدر">
+    </div>
+
+    <!-- تفاصيل المنتج -->
+    <div class="product-details">
+        <h1>عسل السدر</h1>
+        <p>عسل السدر: سحر الطبيعة بخصائص علاجية فريدة.</p>
+        <div class="price">السعر: 350 درهم</div>
+        <button class="review-button">الدفع عند الاستلام</button>
+        <button class="review-button" onclick="window.print()">طباعة الطلب</button>
+    </div>
+
+    <!-- نظام التقييم -->
+    <div class="rating">
+        <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+    </div>
+
+    <!-- المنتجات ذات الصلة -->
+    <div class="related-products">
+        <h2>منتجات ذات صلة</h2>
+        <div>
+            <img src="2.jpg" alt="منتج آخر">
+            <img src="3.jpg" alt="منتج آخر">
+            <img src="4.jpg" alt="منتج آخر">
+        </div>
+    </div>
+</div>
+
+<!-- روابط التواصل الاجتماعي والبريد -->
+<div class="social-footer">
+    <a href="https://www.facebook.com/profile.php?id=100076436856582&mibextid=ZbWKwL">فيسبوك</a>
+    <a href="https://www.instagram.com/doan._honey/profilecard/?igsh=aDh5cXc4bWxmOHkz">إنستقرام</a>
+    <a href="mailto:doanhoney7@gmail.com">البريد الإلكتروني</a>
+    <p>رقم الهاتف: +971 50 754 1300</p>
+</div>
+
+</body>
+</html>
