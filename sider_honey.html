@@ -3,30 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>عسل السدر - DOAN HONEY TRADING</title>
     <link rel="stylesheet" href="styles.css">
+    <title>عسل السدر</title>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <h1>DOAN HONEY TRADING</h1>
-        </div>
+        <h1>عسل السدر</h1>
     </header>
+    <main>
+        <img src="1.jpg" alt="عسل السدر" class="product-image">
+        <h2>الوصف</h2>
+        <p>يعتبر عسل السدر من أفضل أنواع العسل، يُستخرج من أزهار شجرة السدر، ويتميز بلونه الداكن وطعمه الغني. يُعتبر مثاليًا لدعم المناعة وزيادة الطاقة.</p>
+        <p><strong>الحجم:</strong> 1 كيلو</p>
+        <p><strong>السعر:</strong> 350 درهم</p>
+        <button class="buy-button">شراء الآن</button>
 
-    <section class="product-detail">
-        <h2>عسل السدر - 1 كيلو</h2>
-        <img src="1.jpg" alt="عسل السدر">
-        <p>السعر: 350 درهم</p>
-        <p>التوصيل مجاني داخل الإمارات</p>
-        <a href="#">إضافة إلى السلة</a>
-    </section>
-
-    <!-- الفوتر وأيقونات التواصل الاجتماعي -->
-    <footer>
-        <div class="contact-info">
-            <!-- أيقونات التواصل الاجتماعي كما تم ذكرها سابقًا -->
+        <h3>التقييم</h3>
+        <div class="rating">
+            <span class="star" onclick="rate(1)">★</span>
+            <span class="star" onclick="rate(2)">★</span>
+            <span class="star" onclick="rate(3)">★</span>
+            <span class="star" onclick="rate(4)">★</span>
+            <span class="star" onclick="rate(5)">★</span>
+            <form id="commentForm" onsubmit="submitComment(event)">
+                <label for="comment">اكتب تقييمك:</label>
+                <textarea id="comment" rows="4" placeholder="شارك تجربتك هنا..."></textarea>
+                <button type="submit">إرسال</button>
+            </form>
         </div>
+        <div id="feedback"></div>
+    </main>
+    <footer>
+        <h3>تابعونا على</h3>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100076436856582&mibextid=ZbWKwL"><img src="facebook_icon.png" alt="فيسبوك"></a>
+            <a href="https://www.instagram.com/doan._honey/profilecard/?igsh=aDh5cXc4bWxmOHkz"><img src="instagram_icon.png" alt="إنستقرام"></a>
+            <a href="https://maps.app.goo.gl/3kT5k8CrfxZG2eCV9"><img src="location_icon.png" alt="موقع المحل"></a>
+        </div>
+        <p>البريد الإلكتروني: <a href="mailto:doanhoney7@gmail.com">doanhoney7@gmail.com</a></p>
+        <p>رقم الهاتف: +971 50 754 1300</p>
     </footer>
+    <script>
+        function rate(rating) {
+            alert("تم تقييم المنتج بـ " + rating + " نجوم.");
+        }
 
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        function submitComment(event) {
+            event.preventDefault();
+            const comment = document.getElementById("comment").value;
+            document.getElementById("feedback").innerHTML += <p>${comment}</p>;
+            document.getElementById("comment").value = '';
+        }
+    </script>
 </body>
+</html>
