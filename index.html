@@ -3,89 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <title>DOAN HONEY TRADING</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+            text-align: right;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: #f4f4f4;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: #777;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .section {
+            padding: 20px 0;
+        }
+
+        .section p {
+            font-size: 1em;
+            color: #555;
+        }
+
+        .icon {
+            display: flex;
+            align-items: center;
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+
+        .icon img {
+            width: 40px;
+            height: 40px;
+            margin-left: 10px;
+        }
+
+        .product-section {
+            text-align: center;
+        }
+
+        .product-section img {
+            width: 300px;
+            height: auto;
+        }
+
+        .button {
+            background-color: #ffc107;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 10px 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: #ffc107;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
+
     <header>
-        <h1>تجارة عسل DOAN</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">عن المتجر</a></li>
-                <li><a href="#products">المنتجات</a></li>
-                <li><a href="#contact">تواصل معنا</a></li>
-            </ul>
-        </nav>
+        <h1>DOAN HONEY 🍯 TRADING</h1>
+        <p>دوأن هوني للتجارة</p>
     </header>
-    <main>
-        <section id="about">
-            <h2>عن المتجر</h2>
-            <p>نحن نقدم أفضل أنواع العسل الطبيعي، المستخرج من مصادر موثوقة، لضمان جودة عالية وفوائد صحية.</p>
-        </section>
-        <section id="products">
-            <h2>أنواع العسل</h2>
-            <div class="product-list">
-                <div class="product-item">
-                    <a href="sider_honey.html">
-                        <img src="1.jpg" alt="عسل السدر">
-                        <h3>عسل السدر</h3>
-                    </a>
-                </div>
-                <div class="product-item">
-                    <a href="samar_honey.html">
-                        <img src="2.jpg" alt="عسل السمر">
-                        <h3>عسل السمر</h3>
-                    </a>
-                </div>
-                <div class="product-item">
-                    <a href="barsim_honey.html">
-                        <img src="3.jpg" alt="عسل البرسيم">
-                        <h3>عسل البرسيم</h3>
-                    </a>
-                </div>
-                <div class="product-item">
-                    <a href="manuka_honey.html">
-                        <img src="4.jpg" alt="عسل المانوكا">
-                        <h3>عسل المانوكا</h3>
-                    </a>
-                </div>
-                <div class="product-item">
-                    <a href="kashmiri_honey.html">
-                        <img src="5.jpg" alt="عسل الكشميري">
-                        <h3>عسل الكشميري</h3>
-                    </a>
-                </div>
-                <div class="product-item">
-                    <a href="wildflower_honey.html">
-                        <img src="6.jpg" alt="عسل الزهور البرية">
-                        <h3>عسل الزهور البرية</h3>
-                    </a>
-                </div>
+
+    <div class="container">
+        <div class="section">
+            <img src="sf.jpg" alt="عسل">
+            <p>العسل هو سائل الطبيعة الذي يعزز صحتك ويسعد حواسك.</p>
+
+            <div class="icon">
+                <img src="truck-icon.png" alt="شاحنة">
+                <p>أستمتع بتجربة تسوق آمنة مع خدمة الدفع عند التسليم. يمكنك الدفع عند استلام طلبك مما يمنحك الثقة في جودة منتجاتنا. نضمن لك أن العسل طازج ومختار بعناية مع إمكانية فحصه قبل الدفع.</p>
             </div>
-        </section>
-        <section>
-            <h2>ميزات المتجر</h2>
-            <div class="icons">
-                <div class="icon-item">
-                    <img src="free_delivery.png" alt="توصيل مجاني" title="خدمة توصيل مجانية في الإمارات">
-                    <p>توصيل مجاني في الإمارات</p>
-                </div>
-                <div class="icon-item">
-                    <img src="trust_badge.png" alt="ثقة الزبون" title="تعزيز ثقة الزبون">
-                    <p>تعزيز ثقة الزبون</p>
-                </div>
+
+            <div class="icon">
+                <img src="quality-icon.png" alt="جودة عالية">
+                <p>جودة عالية - عسل طبيعي 100%</p>
             </div>
-        </section>
-    </main>
-    <footer>
-        <h3>تابعونا على</h3>
-        <div class="social-icons">
-            <a href="https://www.facebook.com/profile.php?id=100076436856582&mibextid=ZbWKwL"><img src="facebook_icon.png" alt="فيسبوك"></a>
-            <a href="https://www.instagram.com/doan._honey/profilecard/?igsh=aDh5cXc4bWxmOHkz"><img src="instagram_icon.png" alt="إنستقرام"></a>
-            <a href="https://maps.app.goo.gl/3kT5k8CrfxZG2eCV9"><img src="location_icon.png" alt="موقع المحل"></a>
+
+            <div class="icon">
+                <img src="price-icon.png" alt="أسعار مثالية">
+                <p>أسعار مثالية - توصيل مجاناً في الإمارات</p>
+            </div>
+
+            <h2>فوائد العسل المذهلة</h2>
+            <p>العسل هو سائل الطبيعة الذي يعزز صحتك ويسعد حواسك.</p>
+
+            <div class="product-section">
+                <img src="1.jpg" alt="عسل السدر">
+                <p>عسل السدر، سائل الذهب الذي يحمل طياته عبق الجبال ونقاء الطبيعة</p>
+                <a href="#" class="button">عرض عسل السدر</a>
+            </div>
+
+            <div class="product-section">
+                <img src="2.jpg" alt="عسل السمر">
+                <p>عسل السمر، رفيق الرحلات الصحراوية يجمع بين الحلاوة والتاريخ</p>
+                <a href="#" class="button">عرض عسل السمر</a>
+            </div>
+
+            <div class="product-section">
+                <img src="3.jpg" alt="عسل البرسيم">
+                <p>عسل البرسيم، هو الخيار المثالي لعشاق النكهات اللطيفة</p>
+                <a href="#" class="button">عرض عسل البرسيم</a>
+            </div>
+
+            <div class="product-section">
+                <img src="4.jpg" alt="عسل المانوكا">
+                <p>عسل المانوكا، نجم العسل الطبي</p>
+                <a href="#" class="button">عرض عسل المانوكا</a>
+            </div>
+
+            <div class="product-section">
+                <img src="5.jpg" alt="عسل الكشميري">
+                <p>عسل الكشميري، تجربة فاخرة تأتي من أعالي الجبال</p>
+                <a href="#" class="button">عرض عسل الكشميري</a>
+            </div>
+
+            <div class="product-section">
+                <img src="6.jpg" alt="عسل الزهور البرية">
+                <p>عسل الزهور البرية، عبير الطبيعة في كل ملعقة</p>
+                <a href="#" class="button">عرض عسل الزهور البرية</a>
+            </div>
+
+            <h2>آراء الزبائن</h2>
+            <p>تعليقات تعزز ثقة الزبائن فينا وبمنتجاتنا.</p>
+
+            <p>شكراً لاختياركم DOAN HONEY TRADING. نحن نقدر ثقتكم بنا ونسعى لتقديم أفضل منتجات العسل الطبيعية.</p>
         </div>
-        <p>البريد الإلكتروني: <a href="mailto:doanhoney7@gmail.com">doanhoney7@gmail.com</a></p>
-        <p>رقم الهاتف: +971 50 754 1300</p>
-    </footer>
+
+        <footer>
+            <p>للتواصل:</p>
+            <p><a href="https://maps.app.goo.gl/QVbQLmfejZSkcTos5">رابط الموقع</a></p>
+            <p>هاتف المحل: 0569390207 | جوال: +971 56 754 1300 | واتساب: +971506920475</p>
+            <p>انستقرام: doan._honey | تيك توك: @humaisan2 | البريد: <a href="mailto:doanhoney7@gmail.com">doanhoney7@gmail.com</a></p>
+        </footer>
+    </div>
+
 </body>
 </html>
