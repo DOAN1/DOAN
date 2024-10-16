@@ -10,170 +10,129 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            direction: rtl;
-            text-align: right;
-        }
-
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-
-        header {
-            background: #f4f4f4;
-            padding: 20px 0;
+            background-color: #f5f5f5;
             text-align: center;
         }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-            color: #333;
+        h1 {
+            font-size: 24px;
+            margin-top: 20px;
         }
-
-        header p {
-            font-size: 1.2em;
-            color: #777;
-        }
-
-        img {
-            width: 100%;
-            height: auto;
-        }
-
-        .section {
-            padding: 20px 0;
-        }
-
-        .section p {
-            font-size: 1em;
-            color: #555;
-        }
-
-        .icon {
-            display: flex;
-            align-items: center;
-            font-size: 1.2em;
-            margin: 20px 0;
-        }
-
-        .icon img {
-            width: 40px;
-            height: 40px;
-            margin-left: 10px;
-        }
-
-        .product-section {
-            text-align: center;
-        }
-
-        .product-section img {
-            width: 300px;
-            height: auto;
-        }
-
-        .button {
-            background-color: #ffc107;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            display: inline-block;
+        h2 {
+            font-size: 18px;
             margin: 10px 0;
         }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
+        p {
+            font-size: 14px;
+            color: #333;
+            margin: 10px;
         }
-
-        footer a {
-            color: #ffc107;
+        .icon-section {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .icon-section div {
+            margin: 10px;
+            text-align: center;
+        }
+        .icon-section img {
+            width: 50px;
+            height: 50px;
+        }
+        .product-section {
+            margin-top: 40px;
+        }
+        .product-section img {
+            width: 100%;
+            height: auto;
+            max-width: 600px;
+        }
+        .button {
+            background-color: #FFD700;
+            border: none;
+            color: black;
+            padding: 10px 20px;
+            text-align: center;
             text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 5px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        .footer p, .footer a {
+            color: #fff;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>DOAN HONEY 🍯 TRADING</h1>
-        <p>دوأن هوني للتجارة</p>
-    </header>
+    <h1>DOAN HONEY 🍯 TRADING</h1>
+    <img src="sf.jpg" alt="Honey Image">
+    <p>العسل هو سر الطبيعة الذي يمد الجسم بالعناصر الغذائية القيمة، ويعزز الحيوية والنشاط. طعم لذيذ وصحي في كل قطرة.</p>
 
-    <div class="container">
-        <div class="section">
-            <img src="sf.jpg" alt="عسل">
-            <p>العسل هو سائل الطبيعة الذي يعزز صحتك ويسعد حواسك.</p>
-
-            <div class="icon">
-                <img src="truck-icon.png" alt="شاحنة">
-                <p>أستمتع بتجربة تسوق آمنة مع خدمة الدفع عند التسليم. يمكنك الدفع عند استلام طلبك مما يمنحك الثقة في جودة منتجاتنا. نضمن لك أن العسل طازج ومختار بعناية مع إمكانية فحصه قبل الدفع.</p>
-            </div>
-
-            <div class="icon">
-                <img src="quality-icon.png" alt="جودة عالية">
-                <p>جودة عالية - عسل طبيعي 100%</p>
-            </div>
-
-            <div class="icon">
-                <img src="price-icon.png" alt="أسعار مثالية">
-                <p>أسعار مثالية - توصيل مجاناً في الإمارات</p>
-            </div>
-
-            <h2>فوائد العسل المذهلة</h2>
-            <p>العسل هو سائل الطبيعة الذي يعزز صحتك ويسعد حواسك.</p>
-
-            <div class="product-section">
-                <img src="1.jpg" alt="عسل السدر">
-                <p>عسل السدر، سائل الذهب الذي يحمل طياته عبق الجبال ونقاء الطبيعة</p>
-                <a href="#" class="button">عرض عسل السدر</a>
-            </div>
-
-            <div class="product-section">
-                <img src="2.jpg" alt="عسل السمر">
-                <p>عسل السمر، رفيق الرحلات الصحراوية يجمع بين الحلاوة والتاريخ</p>
-                <a href="#" class="button">عرض عسل السمر</a>
-            </div>
-
-            <div class="product-section">
-                <img src="3.jpg" alt="عسل البرسيم">
-                <p>عسل البرسيم، هو الخيار المثالي لعشاق النكهات اللطيفة</p>
-                <a href="#" class="button">عرض عسل البرسيم</a>
-            </div>
-
-            <div class="product-section">
-                <img src="4.jpg" alt="عسل المانوكا">
-                <p>عسل المانوكا، نجم العسل الطبي</p>
-                <a href="#" class="button">عرض عسل المانوكا</a>
-            </div>
-
-            <div class="product-section">
-                <img src="5.jpg" alt="عسل الكشميري">
-                <p>عسل الكشميري، تجربة فاخرة تأتي من أعالي الجبال</p>
-                <a href="#" class="button">عرض عسل الكشميري</a>
-            </div>
-
-            <div class="product-section">
-                <img src="6.jpg" alt="عسل الزهور البرية">
-                <p>عسل الزهور البرية، عبير الطبيعة في كل ملعقة</p>
-                <a href="#" class="button">عرض عسل الزهور البرية</a>
-            </div>
-
-            <h2>آراء الزبائن</h2>
-            <p>تعليقات تعزز ثقة الزبائن فينا وبمنتجاتنا.</p>
-
-            <p>شكراً لاختياركم DOAN HONEY TRADING. نحن نقدر ثقتكم بنا ونسعى لتقديم أفضل منتجات العسل الطبيعية.</p>
+    <div class="icon-section">
+        <div>
+            <img src="delivery-icon.png" alt="Delivery">
+            <p>استمتع بتجربة تسوق آمنة مع خدمة الدفع عند التسليم يمكنك الدفع عند استلام طلبك مما يمنحك الثقة في جودة منتجاتنا.</p>
         </div>
+        <div>
+            <img src="quality-icon.png" alt="Quality">
+            <p>جودة عالية 100% عسل طبيعي</p>
+        </div>
+        <div>
+            <img src="price-icon.png" alt="Price">
+            <p>أسعار مثالية وتوصيل مجاناً في الإمارات</p>
+        </div>
+    </div>
 
-        <footer>
-            <p>للتواصل:</p>
-            <p><a href="https://maps.app.goo.gl/QVbQLmfejZSkcTos5">رابط الموقع</a></p>
-            <p>هاتف المحل: 0569390207 | جوال: +971 56 754 1300 | واتساب: +971506920475</p>
-            <p>انستقرام: doan._honey | تيك توك: @humaisan2 | البريد: <a href="mailto:doanhoney7@gmail.com">doanhoney7@gmail.com</a></p>
-        </footer>
+    <h2>فوائد العسل المذهلة</h2>
+    <p>العسل هو سائل الطبيعة الذي يعزز صحتك ويسعد حواسك.</p>
+
+    <div class="product-section">
+        <img src="1.jpg" alt="عسل السدر">
+        <p>عسل السدر ، سائل الذهب الذي يحمل طياته عبق الجبال ونقاء الطبيعة.</p>
+        <a href="#" class="button">عرض عسل السدر</a>
+
+        <img src="2.jpg" alt="عسل السمر">
+        <p>عسل السمر ، رفيق الرحلات الصحراوية يجمع بين الحلاوة والتاريخ.</p>
+        <a href="#" class="button">عرض عسل السمر</a>
+
+        <img src="3.jpg" alt="عسل البرسيم">
+        <p>عسل البرسيم ، الخيار المثالي لعشاق النكهات اللطيفة.</p>
+        <a href="#" class="button">عرض عسل البرسيم</a>
+
+        <img src="4.jpg" alt="عسل المانوكا">
+        <p>عسل المانوكا ، نجم العسل الطبي.</p>
+        <a href="#" class="button">عرض عسل المانوكا</a>
+
+        <img src="5.jpg" alt="عسل الكشميري">
+        <p>عسل الكشميري ، تجربة فاخرة تأتي من أعالي الجبال.</p>
+        <a href="#" class="button">عرض عسل الكشميري</a>
+
+        <img src="6.jpg" alt="عسل الزهور البرية">
+        <p>عسل الزهور البرية ، عبير الطبيعة في كل ملعقة.</p>
+        <a href="#" class="button">عرض عسل الزهور البرية</a>
+    </div>
+
+    <h2>آراء الزبائن</h2>
+    <p>أفضل عسل تذوقته على الإطلاق! خدمة رائعة وتوصيل سريع.</p>
+    <p>العسل طبيعي ونقي، والشراء كان سهلًا وآمنًا.</p>
+    <p>الجودة رائعة وأسعار ممتازة، بالتأكيد سأشتري مرة أخرى.</p>
+
+    <div class="footer">
+        <p>شكراً لاختياركم DOAN HONEY TRADING نحن نقدر ثقتكم بنا ونسعى لتقديم أفضل منتجات العسل الطبيعية.</p>
+        <p><strong>للتواصل:</strong></p>
+        <p>رابط الموقع: <a href="https://maps.app.goo.gl/QVbQLmfejZSkcTos5">https://maps.app.goo.gl/QVbQLmfejZSkcTos5</a></p>
+        <p>هاتف المحل: 0569390207 | رقم الجوال: +971 56 754 1300 | واتساب: +971506920475</p>
+        <p>إنستقرام: doan._honey | تيك توك: @humaisan2 | البريد الإلكتروني: doanhoney7@gmail.com</p>
     </div>
 
 </body>
